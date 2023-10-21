@@ -9,9 +9,9 @@ const Home = () => {
 
   
     return (
-       <div className="bg-sky-900"> 
-
+       <div className=""> 
         {/* //banner */}
+
         <div className="hero min-h-screen  rounded" style={{backgroundImage: 'url(https://i.ibb.co/x7cx7sP/banner.jpg)'}}>
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
@@ -22,6 +22,8 @@ const Home = () => {
     </div>
   </div>
 </div>
+
+
 
 {/* video  */}
 
@@ -131,9 +133,10 @@ const Home = () => {
 
            <section>
 
-
+        
            </section>
        </div>
+       
     );
 };
 

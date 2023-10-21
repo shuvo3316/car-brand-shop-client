@@ -13,6 +13,7 @@ const Login = () => {
     const location=useLocation()
     const handleLogIn=e=>{
         e.preventDefault();
+        console.log(e.target.checked)
         const form = e.target;
         //const name =form.name.value;
         const email =form.email.value;
