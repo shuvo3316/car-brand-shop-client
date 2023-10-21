@@ -22,7 +22,7 @@ const UpdateProduct = () => {
 
         
            //send data to server 
-        fetch(`http://localhost:5000/products/${_id}`,
+        fetch(`https://brand-shop-server-hrrx65cll-shuvo3316.vercel.app/products/${_id}`,
         {
             method:'put',
             headers:{
