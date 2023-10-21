@@ -193,7 +193,6 @@ const Home = () => {
      <figure><img src="https://i.ibb.co/CzrRJrL/jaguar.jpg" className="h-72 w-full" alt="Shoes" /></figure>
      <div className="card-body">
        <h2 className="card-title">Mercedes</h2>
-       <p>If a dog chews shoes whose shoes does he choose?</p>
        <div className="card-actions justify-end">
        </div>
      </div>
@@ -209,7 +208,7 @@ const Home = () => {
 <div className="flex justify-between border">
     <div className=" border-red-300">
         <p className="text-2xl">why choose us</p>
-        <h2 className="text-4xl">Crazy Advantages</h2>
+        <h2 className="text-4xl">Our  Advantages</h2>
     </div>
     <button className="btn btn-error">Meet the team</button>
 </div>
@@ -218,24 +217,24 @@ const Home = () => {
       <div className="justify-center mt-10">
       <p className="text-6xl ml-32 "><FaPeopleCarry></FaPeopleCarry> </p>
 
-<h2 className="font-bold text-2xl">Best Management</h2>
-<p>Anytime Anywhere</p>
+<h2 className="font-bold text-center text-2xl">Best Management</h2>
+<p className="text-center">Anytime Anywhere</p>
       </div>
     </div>
 <div data-aos="fade-up-right" className="border hover:bg-orange-400 h-60 "> 
       <div className="justify-center mt-10">
       <p className="text-6xl ml-32 "><FaWineGlassAlt></FaWineGlassAlt>  </p>
 
-<h2 className="font-bold text-2xl">Unique Scenario</h2>
-<p>We Think Out Of The Box</p>
+<h2 className="font-bold text-center text-2xl">Unique Design</h2>
+<p className="text-center">We Think Out Of The Box</p>
       </div>
     </div>
 <div data-aos="fade-up-left" className="border hover:bg-orange-400 h-60 "> 
       <div className="justify-center mt-10">
       <p className="text-6xl ml-32 "><FaPlaceOfWorship></FaPlaceOfWorship> </p>
 
-<h2 className="font-bold text-2xl">Perfect Venue</h2>
-<p>perfect Venue</p>
+<h2 className="font-bold  text-center text-2xl">Perfect Memory</h2>
+<p className="text-center">perfect Memory</p>
       </div>
     </div>
 <div data-aos="fade-up-left" className="border hover:bg-orange-400 h-60 "> 
@@ -243,39 +242,39 @@ const Home = () => {
       <p className="text-6xl ml-32 "><CgPhone></CgPhone> </p>
 
 <h2 className="font-bold text-2xl">24/7 hours Support</h2>
-<p>Anytime Anywhere</p>
+<p className="text-center">Anytime Anywhere</p>
       </div>
     </div>
 <div data-aos="fade-up-right" className="border hover:bg-orange-400 h-60 "> 
       <div className="justify-center mt-10">
       <p className="text-6xl ml-32 "><GiPartyHat></GiPartyHat> </p>
 
-<h2 className="font-bold text-2xl">Unforgetable Times</h2>
-<p>Unique  Event Arrangement</p>
+<h2 className="text-center font-bold text-2xl">Unforgetable  driving Experience</h2>
+<p className="text-center">Unique  driving Experience</p>
       </div>
     </div>
 <div data-aos="fade-up-right" className="border hover:bg-orange-400 h-60 "> 
       <div className="justify-center mt-10">
       <p className="text-6xl ml-32 "><FaRegLightbulb></FaRegLightbulb> </p>
 
-<h2 className="font-bold text-2xl">Brilliant Idea</h2>
-<p>We Think Out of The Box</p>
+<h2 className="text-center font-bold text-2xl">Elegent Selection</h2>
+<p className="text-center">We Think Out of The Box</p>
       </div>
     </div>
 <div data-aos="fade-up-left" className="border hover:bg-orange-400 h-60 "> 
       <div className="justify-center mt-10">
-      <p className="text-6xl ml-32 "><GiCrimeSceneTape></GiCrimeSceneTape> </p>
+      <p className="text-6xl ml-24 "><GiCrimeSceneTape></GiCrimeSceneTape> </p>
 
-<h2 className="font-bold text-2xl">Unique Scenario</h2>
-<p>Natural View perfect venue</p>
+<h2 className=" text-center font-bold text-2xl">Unique Models</h2>
+<p className="text-center">Natural View perfect venue</p>
       </div>
     </div>
 <div data-aos="fade-up-left" className="border hover:bg-orange-400 h-60 "> 
       <div className="justify-center mt-10">
       <p className="text-6xl ml-32 "><FaHandshake ></FaHandshake></p>
 
-<h2 className="font-bold text-2xl">Friendly Team</h2>
-<p>More Than 250 Teams</p>
+<h2 className="text-center font-bold text-center text-2xl">Friendly Team</h2>
+<p className="text-center">More Than 250 Teams</p>
       </div>
     </div>
    

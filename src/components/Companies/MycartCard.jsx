@@ -20,7 +20,7 @@ const MycartCard = ({car,setcars,cars}) => {
         })
     }
     return (
-        <div  className="card card-compact w-80  md:w-96 bg-purple-800 mb-5 shadow-xl">
+        <div  data-aos="flip-left" className="card card-compact w-80  md:w-96 bg-purple-800 mb-5 shadow-xl">
   <figure><img src={photo} alt="Shoes" className="h-72 w-full" /></figure>
   <div className="card-body text-center text-white">
     <h2 className="card-title mx-auto ">{name}</h2>
