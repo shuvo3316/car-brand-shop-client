@@ -1,5 +1,4 @@
 import { useLoaderData } from "react-router-dom";
-import HoverCarousel from "hover-carousel";
 import { Carousel } from 'react-carousel-minimal';
 
 
@@ -10,26 +9,27 @@ const Audi = () => {
     const data = [
         {
           image: "https://i.ibb.co/4wqRYcG/audie.jpg",
-          caption: "San Francisco"
+          caption: "25% OFF on this"
         },
         {
           image: "https://i.ibb.co/RhTLKhK/audiq7.jpg",
-          caption: "Scotland"
+          caption: "5% OFF on this"
         },
         {
           image: "https://i.ibb.co/9GXcKJb/audiq81-pnp.jpg",
-          caption: "Darjeeling"
+          caption: "15% OFF on this"
         },
         {
           image: "https://i.ibb.co/zhzg3L1/audia6.jpg",
-          caption: "San Francisco"
+          caption: ""
         },
        
       ];
     
       const captionStyle = {
-        fontSize: '2em',
+        fontSize: '4em',
         fontWeight: 'bold',
+        color:"red",
       }
       const slideNumberStyle = {
         fontSize: '20px',
@@ -83,7 +83,7 @@ const Audi = () => {
 
         
 
-<div className="grid grid-cols-1 md:grid-cols-3 w-11/12 mx-auto">
+<div className="grid grid-cols-1 md:grid-cols-3 mt-40 w-11/12 mx-auto">
             {
                 loadedCars.map(car=> <Card key={car._id  }
                 car={car}

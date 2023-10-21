@@ -133,7 +133,7 @@ const UpdateProduct = () => {
 
 
         </div>
-        <button className="btn w-full  ">Add Product</button>
+        <button className="btn w-full  ">Update Product</button>
      </form>
 
         

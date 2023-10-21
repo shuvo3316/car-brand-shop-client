@@ -2,10 +2,51 @@ import { Link } from "react-router-dom";
 //import { useHistory } from 'react-router-dom';
 //import React from 'react'
 import ReactPlayer from 'react-player/youtube'
+import { Carousel } from "react-carousel-minimal";
+import { FaCommentDots, FaHandshake, FaPeopleCarry, FaPlaceOfWorship, FaRegLightbulb } from "react-icons/fa";
+import { FaWineGlassAlt } from "react-icons/fa";
+import { CgPhone } from "react-icons/cg";
+import { GiCrimeSceneTape, GiPartyHat } from "react-icons/gi";
 
 
 
 const Home = () => {
+    const data = [
+        {
+          image: "https://i.ibb.co/x6tzr67/bmwlogo.jpg",
+          caption: "San Francisco"
+        },
+        {
+          image: "https://i.ibb.co/0nTMWNV/audilogo.jpg",
+          caption: "Scotland"
+        },
+        {
+          image: "https://i.ibb.co/CwLY45B/lamborghinilogo.jpg",
+          caption: "Mercedes-Benz S-Class"
+        },
+        {
+          image: "https://i.ibb.co/wd28nph/mercedece-logo.jpg",
+          caption: "mercedes-benz G class"
+        },
+        {
+          image: "https://i.ibb.co/wd28nph/mercedece-logo.jpg",
+          caption: "mercedes-benz G class"
+        },
+        {
+          image: "https://i.ibb.co/CzrRJrL/jaguar.jpg",
+          caption: "mercedes-benz G class"
+        },
+       
+      ];
+    
+      const captionStyle = {
+        fontSize: '2em',
+        fontWeight: 'bold',
+      }
+      const slideNumberStyle = {
+        fontSize: '20px',
+        fontWeight: 'bold',
+      }
 
   
     return (
@@ -27,12 +68,12 @@ const Home = () => {
 
 {/* video  */}
 
-<div className="justify-center my-5">
+<div className="justify-center w-72 md:w-full my-5">
     <h2 className="text-4xl text-center text-orange-400">New Arrival</h2>
 
-<div className="md:ml-80">
+<div className="   md:ml-80">
 <ReactPlayer
-          className='react-player justify-center'
+          className=' react-player  justify-center'
           url='https://www.youtube.com/watch?v=sitXeGjm4Mc'
          // width='100%'
           //height='100%'
@@ -41,8 +82,46 @@ const Home = () => {
 </div>
 
 
+<section className="my-20">
+<div className="App m-10">
+      <div style={{ textAlign: "center" }}>
+        <div style={{
+          padding: "0 20px"
+        }}>
+          <Carousel
+            data={data}
+            time={2000}
+            width="850px"
+            height="500px"
+            captionStyle={captionStyle}
+            radius="10px"
+            slideNumber={true}
+            slideNumberStyle={slideNumberStyle}
+            captionPosition="bottom"
+            automatic={true}
+            dots={true}
+            pauseIconColor="white"
+            pauseIconSize="40px"
+            slideBackgroundColor="darkgrey"
+            slideImageFit="cover"
+            thumbnails={true}
+            thumbnailWidth="100px"
+            style={{
+              textAlign: "center",
+              maxWidth: "850px",
+              maxHeight: "500px",
+              margin: "40px auto",
+            }}
+          />
+        </div>
+      </div>
+    </div>
+    
+    </section>
 
-<div  className=" grid grid-cols-1 md:grid-cols-3 gap-8  mx-auto">
+
+
+<div  className=" grid grid-cols-1 md:grid-cols-3 gap-8 mt-52 mb-5 mx-auto">
            
 
            <Link to={"/bmw"}>
@@ -50,7 +129,6 @@ const Home = () => {
      <figure><img src="https://i.ibb.co/x6tzr67/bmwlogo.jpg" className="h-72 w-full" alt="Shoes" /></figure>
      <div className="card-body">
        <h2 className="card-title">BMW</h2>
-       <p>If a dog chews shoes whose shoes does he choose?</p>
        <div className="card-actions justify-end">
        </div>
      </div>
@@ -65,7 +143,6 @@ const Home = () => {
      <figure><img src="https://i.ibb.co/0nTMWNV/audilogo.jpg" className="h-72 w-full" alt="Shoes" /></figure>
      <div className="card-body">
        <h2 className="card-title">AUDI</h2>
-       <p>If a dog chews shoes whose shoes does he choose?</p>
        <div className="card-actions justify-end">
        </div>
      </div>
@@ -78,7 +155,6 @@ const Home = () => {
      <figure><img src="https://i.ibb.co/25LNg9G/tatalogo.jpg" className="h-72 w-full" alt="Shoes" /></figure>
      <div className="card-body">
        <h2 className="card-title">TATA</h2>
-       <p>If a dog chews shoes whose shoes does he choose?</p>
        <div className="card-actions justify-end">
        </div>
      </div>
@@ -91,7 +167,6 @@ const Home = () => {
      <figure><img src="https://i.ibb.co/CwLY45B/lamborghinilogo.jpg" className="h-72 w-full" alt="Shoes" /></figure>
      <div className="card-body">
        <h2 className="card-title">Lamborghini</h2>
-       <p>If a dog chews shoes whose shoes does he choose?</p>
        <div className="card-actions justify-end">
        </div>
      </div>
@@ -102,8 +177,7 @@ const Home = () => {
      <div className="card w-96 bg-teal-500 shadow-xl">
      <figure><img src="https://i.ibb.co/wd28nph/mercedece-logo.jpg" className="h-72 w-full" alt="Shoes" /></figure>
      <div className="card-body">
-       <h2 className="card-title">Mercedes</h2>
-       <p>If a dog chews shoes whose shoes does he choose?</p>
+       <h2 className="card-title">Jaguar</h2>
        <div className="card-actions justify-end">
        </div>
      </div>
@@ -130,11 +204,83 @@ const Home = () => {
            </div>
 
 
+           <section className="bg-slate-200 p-4 my-5">
 
-           <section>
+<div className="flex justify-between border">
+    <div className=" border-red-300">
+        <p className="text-2xl">why choose us</p>
+        <h2 className="text-4xl">Crazy Advantages</h2>
+    </div>
+    <button className="btn btn-error">Meet the team</button>
+</div>
+<div className="grid grid-cols-1 md:grid-cols-4  mt-6">
+<div data-aos="fade-up-right" className="border hover:bg-orange-400 h-60 "> 
+      <div className="justify-center mt-10">
+      <p className="text-6xl ml-32 "><FaPeopleCarry></FaPeopleCarry> </p>
 
-        
-           </section>
+<h2 className="font-bold text-2xl">Best Management</h2>
+<p>Anytime Anywhere</p>
+      </div>
+    </div>
+<div data-aos="fade-up-right" className="border hover:bg-orange-400 h-60 "> 
+      <div className="justify-center mt-10">
+      <p className="text-6xl ml-32 "><FaWineGlassAlt></FaWineGlassAlt>  </p>
+
+<h2 className="font-bold text-2xl">Unique Scenario</h2>
+<p>We Think Out Of The Box</p>
+      </div>
+    </div>
+<div data-aos="fade-up-left" className="border hover:bg-orange-400 h-60 "> 
+      <div className="justify-center mt-10">
+      <p className="text-6xl ml-32 "><FaPlaceOfWorship></FaPlaceOfWorship> </p>
+
+<h2 className="font-bold text-2xl">Perfect Venue</h2>
+<p>perfect Venue</p>
+      </div>
+    </div>
+<div data-aos="fade-up-left" className="border hover:bg-orange-400 h-60 "> 
+      <div className="justify-center mt-10">
+      <p className="text-6xl ml-32 "><CgPhone></CgPhone> </p>
+
+<h2 className="font-bold text-2xl">24/7 hours Support</h2>
+<p>Anytime Anywhere</p>
+      </div>
+    </div>
+<div data-aos="fade-up-right" className="border hover:bg-orange-400 h-60 "> 
+      <div className="justify-center mt-10">
+      <p className="text-6xl ml-32 "><GiPartyHat></GiPartyHat> </p>
+
+<h2 className="font-bold text-2xl">Unforgetable Times</h2>
+<p>Unique  Event Arrangement</p>
+      </div>
+    </div>
+<div data-aos="fade-up-right" className="border hover:bg-orange-400 h-60 "> 
+      <div className="justify-center mt-10">
+      <p className="text-6xl ml-32 "><FaRegLightbulb></FaRegLightbulb> </p>
+
+<h2 className="font-bold text-2xl">Brilliant Idea</h2>
+<p>We Think Out of The Box</p>
+      </div>
+    </div>
+<div data-aos="fade-up-left" className="border hover:bg-orange-400 h-60 "> 
+      <div className="justify-center mt-10">
+      <p className="text-6xl ml-32 "><GiCrimeSceneTape></GiCrimeSceneTape> </p>
+
+<h2 className="font-bold text-2xl">Unique Scenario</h2>
+<p>Natural View perfect venue</p>
+      </div>
+    </div>
+<div data-aos="fade-up-left" className="border hover:bg-orange-400 h-60 "> 
+      <div className="justify-center mt-10">
+      <p className="text-6xl ml-32 "><FaHandshake ></FaHandshake></p>
+
+<h2 className="font-bold text-2xl">Friendly Team</h2>
+<p>More Than 250 Teams</p>
+      </div>
+    </div>
+   
+</div>
+</section>
        </div>
        
     );

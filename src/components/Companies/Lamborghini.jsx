@@ -9,19 +9,19 @@ const Lamborghini = () => {
     const data = [
         {
           image: "https://i.ibb.co/mGtQqFk/evo.webp",
-          caption: "San Francisco"
+          caption: " 9% OFF on this"
         },
         {
           image: "https://i.ibb.co/sHGk8B2/Lamborghini-Huracan-STO.webp",
-          caption: "Scotland"
+          caption: "15% OFF on this"
         },
         {
           image: "https://i.ibb.co/wWHm9bp/HURACA-N-STO.webp",
-          caption: "Darjeeling"
+          caption: "5% OFF on this"
         },
         {
           image: "https://i.ibb.co/J5WTJwn/huracan-sterrato-01.webp",
-          caption: "25% OFF  Francisco"
+          caption: "25% OFF  on this"
         },
        
       ];
@@ -78,7 +78,7 @@ const Lamborghini = () => {
 
 
 
-          <div className="grid grid-cols-1 md:grid-cols-3 mx-auto w-11/12 mt-8 ">
+          <div className="grid grid-cols-1 md:grid-cols-3 mt-40 mx-auto w-11/12 mt-8 ">
             {
                 loadedCars.map(car=> <Card key={car._id  }
                 car={car}

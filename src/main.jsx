@@ -43,7 +43,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/addproduct",
-        element:<AddProduct></AddProduct>
+        element:<PrivateRoute><AddProduct></AddProduct></PrivateRoute>
       },
       {
         path:":brand/updateproduct/:id",
@@ -64,7 +64,7 @@ const router = createBrowserRouter([
       {
         path:"/bmw",
         element:<Bmw></Bmw>,
-        loader:()=>fetch('/http://localhost:5000/allproducts/bmw')
+        loader:()=>fetch('http://localhost:5000/allproducts/bmw')
       },
       {
         path:"/jaguar",

@@ -8,19 +8,19 @@ const Mercedes = () => {
     const data = [
         {
           image: "https://i.ibb.co/tXFHc0H/Mercedes1.webp",
-          caption: "San Francisco"
+          caption: "5% OFF on this"
         },
         {
           image: "https://i.ibb.co/93KF6YW/Mercedes2.webp",
-          caption: "Scotland"
+          caption: "15% OFF on this"
         },
         {
           image: "https://i.ibb.co/tBjY9MR/Mercedes.webp",
-          caption: "Mercedes-Benz S-Class"
+          caption: "5% OFF on this"
         },
         {
           image: "https://i.ibb.co/tC9vm8x/mercedes4.jpg",
-          caption: "mercedes-benz G class"
+          caption: "45% OFF on this"
         },
        
       ];
@@ -28,6 +28,7 @@ const Mercedes = () => {
       const captionStyle = {
         fontSize: '2em',
         fontWeight: 'bold',
+        color:"red"
       }
       const slideNumberStyle = {
         fontSize: '20px',
@@ -37,7 +38,7 @@ const Mercedes = () => {
 
       <div className="dark:bg-slate-800 ">
 
-<section className="mb-20">
+<section className="mb-28">
 <div className="App m-10">
       <div style={{ textAlign: "center" }}>
         <div style={{
@@ -75,7 +76,7 @@ const Mercedes = () => {
     </section>
 
 
-<div className="grid grid-cols-1 md:grid-cols-3 w-11/12  mx-auto">
+<div className="grid grid-cols-1  md:grid-cols-3 w-11/12  mx-auto">
             {
                 loadedCars.map(car=> <Card key={car._id  }
                 car={car}

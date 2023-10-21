@@ -82,7 +82,7 @@ const Navbar = () => {
                 </div>
               </div> <p>{user.displayName}</p><button className="btn btn-error" onClick={logOut}>SignOut</button></>
                 :
-                <button className="btn btn-error">Login</button>
+               <NavLink to={"/login"}> <button className="btn btn-error">Login</button></NavLink>
 
 
             }

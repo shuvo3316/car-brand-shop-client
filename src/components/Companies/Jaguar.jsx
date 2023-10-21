@@ -75,7 +75,7 @@ const Jaguar = () => {
     </section>
 
 
-<div className="grid grid-cols-1 md:grid-cols-3 w-11/12  mx-auto">
+<div className="grid grid-cols-1 mt-32 md:grid-cols-3 w-11/12  mx-auto">
             {
                 loadedCars.map(car=> <Card key={car._id  }
                 car={car}

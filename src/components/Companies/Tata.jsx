@@ -9,26 +9,27 @@ const Tata = () => {
     const data = [
         {
           image: "https://i.ibb.co/tqr23gS/bmwx5.jpg",
-          caption: "San Francisco"
+          caption: "25% OFF on this"
         },
         {
           image: "https://i.ibb.co/M1TS6Q2/bmw-5.jpg",
-          caption: "Scotland"
+          caption: "15% OFF on this"
         },
         {
           image: "https://i.ibb.co/Jrxys91/bmw-2.jpg",
-          caption: "Darjeeling"
+          caption: "5% OFF on this"
         },
         {
           image: "https://i.ibb.co/ZB6SjZq/bmw7.jpg",
-          caption: "San Francisco"
+          caption: "35% OFF on this"
         },
        
       ];
     
       const captionStyle = {
-        fontSize: '2em',
+        fontSize: '4em',
         fontWeight: 'bold',
+        color:"red"
       }
       const slideNumberStyle = {
         fontSize: '20px',
