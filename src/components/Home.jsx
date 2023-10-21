@@ -45,19 +45,6 @@ const Home = () => {
 <div  className=" grid grid-cols-1 md:grid-cols-3 gap-8  mx-auto">
            
 
-           <Link to={"/bmw"}>
-           <div className="card w-96 bg-teal-500 shadow-xl">
-     <figure><img src="https://i.ibb.co/x6tzr67/bmwlogo.jpg" className="h-72 w-full" alt="Shoes" /></figure>
-     <div className="card-body">
-       <h2 className="card-title">BMW</h2>
-       <p>If a dog chews shoes whose shoes does he choose?</p>
-       <div className="card-actions justify-end">
-       </div>
-     </div>
-   </div>
-           
-           
-           </Link>
    
    
       <Link to={"/audi"}>
