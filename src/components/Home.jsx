@@ -68,12 +68,12 @@ const Home = () => {
 
 {/* video  */}
 
-<div className="justify-center w-72 md:w-full my-5">
+<div className="justify-center md:w-full my-5">
     <h2 className="text-4xl text-center text-orange-400">New Arrival</h2>
 
-<div className="   md:ml-80">
+<div className="   md:ml-96">
 <ReactPlayer
-          className=' react-player  justify-center'
+          className='max-w-fit md:max-w-md justify-center'
           url='https://www.youtube.com/watch?v=sitXeGjm4Mc'
          // width='100%'
           //height='100%'
@@ -125,7 +125,7 @@ const Home = () => {
            
 
            <Link to={"/bmw"}>
-           <div className="card w-96 bg-teal-500 shadow-xl">
+           <div className="card w-72 md:w-96 bg-teal-500 shadow-xl">
      <figure><img src="https://i.ibb.co/x6tzr67/bmwlogo.jpg" className="h-72 w-full" alt="Shoes" /></figure>
      <div className="card-body">
        <h2 className="card-title">BMW</h2>
@@ -139,7 +139,7 @@ const Home = () => {
    
    
       <Link to={"/audi"}>
-      <div className="card w-96 bg-teal-500 shadow-xl">
+      <div className="card w-72 md:w-96 bg-teal-500 shadow-xl">
      <figure><img src="https://i.ibb.co/0nTMWNV/audilogo.jpg" className="h-72 w-full" alt="Shoes" /></figure>
      <div className="card-body">
        <h2 className="card-title">AUDI</h2>
@@ -151,7 +151,7 @@ const Home = () => {
    
    
     <Link to={"/tata"}>
-    <div className="card w-96 bg-teal-500 shadow-xl">
+    <div className="card w-72 md:w-96  bg-teal-500 shadow-xl">
      <figure><img src="https://i.ibb.co/25LNg9G/tatalogo.jpg" className="h-72 w-full" alt="Shoes" /></figure>
      <div className="card-body">
        <h2 className="card-title">TATA</h2>
@@ -163,7 +163,7 @@ const Home = () => {
    
    
      <Link to={"/lamborghini"}>
-     <div className="card w-96 bg-teal-500 shadow-xl">
+     <div className="card w-72 md:w-96 bg-teal-500 shadow-xl">
      <figure><img src="https://i.ibb.co/CwLY45B/lamborghinilogo.jpg" className="h-72 w-full" alt="Shoes" /></figure>
      <div className="card-body">
        <h2 className="card-title">Lamborghini</h2>
@@ -174,10 +174,10 @@ const Home = () => {
    
      </Link>
      <Link to={"/mercedes"}>
-     <div className="card w-96 bg-teal-500 shadow-xl">
+     <div className="card w-72 md:w-96 bg-teal-500 shadow-xl">
      <figure><img src="https://i.ibb.co/wd28nph/mercedece-logo.jpg" className="h-72 w-full" alt="Shoes" /></figure>
      <div className="card-body">
-       <h2 className="card-title">Jaguar</h2>
+       <h2 className="card-title">Mercedes</h2>
        <div className="card-actions justify-end">
        </div>
      </div>
@@ -189,10 +189,10 @@ const Home = () => {
 
 
      <Link to={"/jaguar"}>
-     <div className="card w-96 bg-teal-500 shadow-xl">
+     <div className="card w-72 md:w-96 bg-teal-500 shadow-xl">
      <figure><img src="https://i.ibb.co/CzrRJrL/jaguar.jpg" className="h-72 w-full" alt="Shoes" /></figure>
      <div className="card-body">
-       <h2 className="card-title">Mercedes</h2>
+       <h2 className="card-title">Jaguar</h2>
        <div className="card-actions justify-end">
        </div>
      </div>
@@ -273,7 +273,7 @@ const Home = () => {
       <div className="justify-center mt-10">
       <p className="text-6xl ml-32 "><FaHandshake ></FaHandshake></p>
 
-<h2 className="text-center font-bold text-center text-2xl">Friendly Team</h2>
+<h2 className="text-center font-bold  text-2xl">Friendly Team</h2>
 <p className="text-center">More Than 250 Teams</p>
       </div>
     </div>

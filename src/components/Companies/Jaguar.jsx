@@ -8,26 +8,27 @@ const Jaguar = () => {
     const data = [
         {
           image: "https://i.ibb.co/CJRzGyf/2016-jaguar-xjl.jpg",
-          caption: "San Francisco"
+          caption: "20% off on this "
         },
         {
           image: "https://i.ibb.co/J5fymWt/jaguar2.webp",
-          caption: "Scotland"
+          caption: "10% off on this"
         },
         {
           image: "https://i.ibb.co/J5fymWt/jaguar2.webp",
-          caption: "Jaguar XJ LWB Autobiography 2017"
+          caption: " available now"
         },
         {
           image: "https://i.ibb.co/dMpY4zX/jaguar3.jpg",
-          caption: "San Francisco"
+          caption: "20% off on this"
         },
        
       ];
     
       const captionStyle = {
-        fontSize: '2em',
+        fontSize: '4em',
         fontWeight: 'bold',
+        color:"red"
       }
       const slideNumberStyle = {
         fontSize: '20px',

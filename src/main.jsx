@@ -22,6 +22,7 @@ import Mycart from './components/Companies/Mycart';
 import UpdateProduct from './components/Companies/UpdateProduct';
 import Jaguar from './components/Companies/Jaguar';
 import Errorpage from './components/Companies/Errorpage';
+import Mercedes from './components/Companies/Mercedes';
 
 const router = createBrowserRouter([
   {
@@ -48,48 +49,48 @@ const router = createBrowserRouter([
       {
         path:":brand/updateproduct/:id",
         element:<PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+        loader:({params})=>fetch(`https://brand-shop-server-hrrx65cll-shuvo3316.vercel.app/products/${params.id}`)
 
       },
       {
         path:"/mycart/:uid",
         element:<Mycart></Mycart>,
-       loader:({params})=>fetch(`http://localhost:5000/users/${params.uid}`)
+       loader:({params})=>fetch(`https://brand-shop-server-hrrx65cll-shuvo3316.vercel.app/users/${params.uid}`)
       },
       {
         path:"/details/:id",
         element:<PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+        loader:({params})=>fetch(`https://brand-shop-server-hrrx65cll-shuvo3316.vercel.app/products/${params.id}`)
       },
       {
         path:"/bmw",
         element:<Bmw></Bmw>,
-        loader:()=>fetch('http://localhost:5000/allproducts/bmw')
+        loader:()=>fetch('https://brand-shop-server-hrrx65cll-shuvo3316.vercel.app/allproducts/bmw')
       },
       {
         path:"/jaguar",
         element:<Jaguar></Jaguar>,
-        loader:()=>fetch('http://localhost:5000/allproducts/jaguar')
+        loader:()=>fetch('https://brand-shop-server-hrrx65cll-shuvo3316.vercel.app/allproducts/jaguar')
       },
       {
         path:"/mercedes",
-        element:<Jaguar></Jaguar>,
-        loader:()=>fetch('http://localhost:5000/allproducts/mercedes')
+        element:<Mercedes></Mercedes>,
+        loader:()=>fetch('https://brand-shop-server-hrrx65cll-shuvo3316.vercel.app/allproducts/mercedes')
       },
       {
         path:"/audi",
         element:<Audi></Audi>,
-        loader:()=>fetch('http://localhost:5000/allproducts/audi')
+        loader:()=>fetch('https://brand-shop-server-hrrx65cll-shuvo3316.vercel.app/allproducts/audi')
       },
       {
         path:"/tata",
         element:<Tata></Tata>,
-        loader:()=>fetch('http://localhost:5000/allproducts/tata')
+        loader:()=>fetch('https://brand-shop-server-hrrx65cll-shuvo3316.vercel.app/allproducts/tata')
       },
       {
         path:"/lamborghini",
         element:<Lamborghini></Lamborghini>,
-        loader:()=>fetch('http://localhost:5000/allproducts/lamborghini')
+        loader:()=>fetch('https://brand-shop-server-hrrx65cll-shuvo3316.vercel.app/allproducts/lamborghini')
       },
     ]
   },

@@ -17,7 +17,7 @@ const ProductDetails = () => {
 
         }
 
-        fetch(`http://localhost:5000/users`,{
+        fetch(`https://brand-shop-server-hrrx65cll-shuvo3316.vercel.app/users`,{
             method:"post",
             headers:{
                 'content-type':'application/json'

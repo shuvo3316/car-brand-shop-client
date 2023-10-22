@@ -78,7 +78,7 @@ const Lamborghini = () => {
 
 
 
-          <div className="grid grid-cols-1 md:grid-cols-3 mt-40 mx-auto w-11/12 mt-8 ">
+          <div className="grid grid-cols-1 md:grid-cols-3 mt-40 mx-auto w-11/12  ">
             {
                 loadedCars.map(car=> <Card key={car._id  }
                 car={car}

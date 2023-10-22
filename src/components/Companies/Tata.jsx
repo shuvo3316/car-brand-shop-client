@@ -8,19 +8,19 @@ const Tata = () => {
 
     const data = [
         {
-          image: "https://i.ibb.co/tqr23gS/bmwx5.jpg",
+          image: "https://i.ibb.co/dgJMXZL/nano.jpg",
           caption: "25% OFF on this"
         },
         {
-          image: "https://i.ibb.co/M1TS6Q2/bmw-5.jpg",
+          image: "https://i.ibb.co/YcWhZg6/safari.jpg",
           caption: "15% OFF on this"
         },
         {
-          image: "https://i.ibb.co/Jrxys91/bmw-2.jpg",
+          image: "https://i.ibb.co/1XDwKSf/tata-harriar.webp",
           caption: "5% OFF on this"
         },
         {
-          image: "https://i.ibb.co/ZB6SjZq/bmw7.jpg",
+          image: "https://i.ibb.co/10RTRZd/tatatiago.webp",
           caption: "35% OFF on this"
         },
        
@@ -76,7 +76,7 @@ const Tata = () => {
 
 
 
-<div className="grid grid-cols-1 md:grid-cols-3 w-11/12  mx-auto">
+<div className="grid grid-cols-1 md:grid-cols-3 mt-40 w-11/12  mx-auto">
             {
                 loadedCars.map(car=> <Card key={car._id  }
                 car={car}

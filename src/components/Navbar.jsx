@@ -65,14 +65,14 @@ const Navbar = () => {
     <img src="https://i.ibb.co/1dnprcQ/carhublogo.jpg" />
   </div>
 </div>   
-       <a className="btn btn-ghost normal-case text-xl">Car HUB</a>
+       <a className="btn btn-ghost hidden lg:block normal-case text-xl">Car HUB</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
            {links}
           </ul>
         </div>
-        <div className="navbar-end flex-col md:flex-row lg:flex-row">
+        <div className="navbar-end flex-col md:flex-row lg:flex-row justify-end">
        
 
             {

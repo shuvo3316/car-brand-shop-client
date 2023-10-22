@@ -26,7 +26,7 @@ const Mercedes = () => {
       ];
     
       const captionStyle = {
-        fontSize: '2em',
+        fontSize: '3em',
         fontWeight: 'bold',
         color:"red"
       }
